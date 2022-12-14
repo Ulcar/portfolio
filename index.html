@@ -49,7 +49,7 @@
 	            <div class="col-12 col-md-auto">
 		            <div class="dark-mode-switch d-flex">
 						<div class="form-check form-switch mx-auto mx-md-0">
-							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" value="true" />
 							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
 						</div>
 			        </div><!--//dark-mode-switch-->   
@@ -66,10 +66,13 @@
                         <h2 class="heading">About Me</h2>
                         <div class="content">
                             <p>I'm an ICT Graduate with a big passion for game development, 3d programming, and low level hardware programming and electronics.  
-                            I have been programming in c# and C++ for 4 years now, and have spent the last two years getting heavily game development, mainly using Unity. 
+                            I have been programming in c# and C++ for 4 years now, and have spent the last three years getting heavily game development, mainly using Unity. 
                             Lately have found a new passion in shader programming, getting heavily inspired by the low level coding done by the demoscene.
-                            In my free time I mostly go out with friends, play games (and analyse / critique them thoroughly), or go (Kite)surfing.
-                            
+                            My goal in game development is making new kinds of experiences, that aren't just limited to traditional style games.
+                            I personally think game development can be used for way more than just recreational games, and I want to make 
+                            See my projects on this page for a few examples of what I mean!
+                            In my free time I mostly go out with friends, go (Kite)surfing, do reading, or play games.
+                            Currently spending a lot of free time learning Japanese. 
                             </p>
                          
                         </div><!--//content-->
@@ -82,6 +85,33 @@
                         <div class="content">    
                                                
 
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://twitter.com/noizbunker" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/noiz.jpg" alt="project name"/>
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">NOIZ VR Club</a>  <span class="place">Project lead / main developer</span> <span class="place">(2022)</span></h3>
+                                    <p class="mb-2"> 
+                                        Club NOIZ is an online virtual reality venue for raves and other music events, developed in Unity, and my current passion project.
+                                        Inspired by clubs in Berlin, our goal with this project was to make a VR "Techno bunker" experience, resembling old berlin buildings repurposed into clubs.
+                                        We took visual inspiration from clubs like Tresor and Berghain.
+                                        We developed this using Unity and host it in the game vrchat, which allows to host your own Unity projects online, complete with custom scripting and everything.
+                                        This means the game VRChat can handle things like custom avatars for players and connecting players together, and we mainly have to program custom networking for all our self made components,
+                                        such as the VJ screens, the audio synced lighting, or live updating posters showing which DJ is playing, as well as the entire audio and video system, making sure it's all synched up with every player. 
+
+                                        I'm the development lead in a small team where I handle all the Unity programming. 
+                                        I mainly work together with two technical artists and one sound designer to bring the environment to life. 
+                                        The venue is only accesible once a month when we host an event there, which we usually plan out and announce a few weeks in advance. 
+                                        We usually get a few hundred unique logins each opening, 
+
+                                        The biggest challenge in developing this project was optimising the environment for both Oculus Quest and PC (The main club room is around 50 draw calls on the mobile version!)
+                                        developing shaders for dynamic lighting that doesn't tank the framerate even when 100 people are running around, and within all those constraints still make an environment
+                                        that looks and feels like an old run-down techno bunker. 
+                                    </p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+
+                            
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="" target="_blank">
                                 </a>
@@ -136,7 +166,7 @@
                 
                 <section class="projects section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Editors</h2>
+                        <h2 class="heading">Unity Editor projects</h2>
                         <div class="content">
 
                             <div class="item">
@@ -157,12 +187,22 @@
 
                 <section class="shaders section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Shaders</h2>
+                        <h2 class="heading">Minor Projects</h2>
                         <div class="content">
                             <div class="item">
                                 <h3 class="title"><a href="https://github.com/Ulcar/Transparant-video-shader" target="_blank">Transparent Video shader </a> </h3>
                                 <img src="assets/images/projects/caligula.png" width="400px" height="auto"> </img>
                                 <p class="summary">Shader for transparent videos in Unity, using an alpha mask in the video input. This shader was made to reverse engineer transparent videos from the game Caligula 2. </p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Multiple Reverse engineering/modding projects</h3>
+                                <img src="assets/images/projects/caligula.png" width="400px" height="auto"> </img>
+                                <p class="summary">I've done multiple succesful reverse engineering attempts on Unity games, where I get the full game working within the Unity Editor.
+                                    I've done this mostly for Mono compiled games (which are honestly really easy to reverse engineer), but have made IL2cpp attempts with various levels of success.
+                                    Pictured above is the game "The Silver case", fully working in my Unity editor, allowing me to make mods for the game easily. 
+                                    I of course can't share this source code here directly, but can share my workflow for this if requested!
+                                 </p>
                             </div><!--//item-->
                             
                             
@@ -176,7 +216,7 @@
                         <div class="content">
                             <div class="item">
                                 <h3 class="title">Freelance Unity Developer <span class="place"> Infinite life studio<a href="#"></a></span> <span class="year">(2022 - Present)</span></h3>
-                                <p>Working on a secret game project. </p>
+                                <p>Worked freelance on a yet unreleased mobile game project. Am under an NDA so will post the game here once it's out. </p>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Unity Programmer -  <span class="place"><a href="#">3D Amsterdam - Gemeente Amsterdam</a></span> <span class="year">(September 2020 - Feburary 2021)</span></h3>
@@ -205,7 +245,7 @@
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Hilversum, The Netherlands</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">lucasschilperoort4@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://ulcar.github.io/</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -223,7 +263,7 @@
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">C# &amp; .NET<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">C# &amp; .NET<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="The main programming language we were taught in University. I usually default to using c# for most non embedded software. "><i class="fas fa-info-circle"></i>Expert</span></h3>
 
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
@@ -232,7 +272,7 @@
 
 
                                 <div class="item">
-                                    <h3 class="level-title">Unity<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">Unity<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Mostly self taught. Had two courses in University teaching the basics of Unity, the rest of my knowledge comes from extensive c# knowledge and "><i class="fas fa-info-circle"></i>Expert</span></h3>
 
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
@@ -240,35 +280,35 @@
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">C<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">C<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Was taught C at Uni for working with embedded systems. Still my go-to programming language for simpler embedded projects."><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 94%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
 									</div><!--//level-bar-->                                   
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">C++<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <h3 class="level-title">C++<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Mostly used C++ at an embedded level. This would be as high as my other programming languages if I used it much for PC development too, however due to usually using this for embedded I don't know a lot of "><i class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">GLSL &amp; Shader graph<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Proficient</span></h3>
+                                    <h3 class="level-title">GLSL &amp; Shader graph<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Started learning GLSL this year mostly. Been learning  Learned shader graph at my previous internship. "><i class="fas fa-info-circle"></i>Proficient</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 60%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Unreal Engine<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Intermiedate</span></h3>
+                                    <h3 class="level-title">Unreal Engine<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Trying to get more experience in Unreal in my spare time, especially with Unreal engine 5 out. Most core principles of game development are really similar so the basics were easy to pick up, I however wouldn't be able to make anything too complex yet until given more time to learn."><i class="fas fa-info-circle"></i>intermediate</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 40%" aria-valuenow="10"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Python<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Intermiedate</span></h3>
+                                    <h3 class="level-title">Python<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Completely self taught. Only really used this for "><i class="fas fa-info-circle"></i>intermediate</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 20%" aria-valuenow="10"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
@@ -294,6 +334,10 @@
                                     <span class="title"><strong>English:</strong></span>
                                     <span class="level">Secondary language<br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star-half"></i></span>
                                 </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Japanese</strong></span>
+                                    <span class="level">Currently learning (2 months in of daily practice)<br class="visible-sm visible-xs"/><i class="fas fa-star"></i></span>
+                                </li><!--//item-->
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -305,7 +349,7 @@
                         <h2 class="heading">Education</h2>
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc ICT & Technology</h3>
-                                <h4 class="university">Fontys University of Applied Sciences Eindhoven <span class="year">(2017-2022)</span></h4>
+                                <h4 class="university">Fontys University of Applied Sciences Eindhoven <span class="year">(2018-2022)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
